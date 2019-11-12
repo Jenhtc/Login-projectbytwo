@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'dbconnect.php';
+include 'edit.php';
 /* echo($_SESSION['userID']); */
 $collectingusername='';
 $collectingmail='';
@@ -61,7 +62,7 @@ $collectingGH=$collectdata['github'];
         <!-- Username -->
         <div class="row">
         <div class="input-field col s12">
-          <input name="username" id="username" type="text" value="<?= $collectingusername; ?>" class="validate" required>
+          <input disabled name="username" id="username" type="text" value="<?= $collectingusername; ?>" class="validate" required>
           <label for="username">Username</label>
           </div>
           </div>

@@ -47,6 +47,12 @@ include 'session.php';
               <label for="password">Password</label>
             </div>
           </div>
+<!-- Link to create new account -->
+        <div class="account"> 
+            <a href="signup.php" alt="Link to sign up"> No account yet ? Come here to create yours baby </a>
+<br><br>
+
+
 <!--       Submit button    -->      
 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
         <i class="material-icons right">send</i>

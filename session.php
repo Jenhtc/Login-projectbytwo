@@ -27,6 +27,7 @@ if($user = $sqlrequest->fetch()){
     
     if($error==0) {
         $_SESSION['userID'] = $user['id'];
+        $_SESSION['password'] = $user['password'];
 
         header("location:welcome.php");
 

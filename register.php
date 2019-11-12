@@ -25,8 +25,14 @@ if ($password != $confpassword)
     $confpassword = '';
 }
    
-
-
+connexiondb();
+$sqlinsert = connexiondb();
+$sqlrequest = $sqlinsert->prepare('SELECT username FROM student WHERE username=?');
+$sqlrequest->execute(array($username));
+if($sqlrequest->fetch()) {
+    $error++;
+    $errorMessage=$errorMessage . "<li>Username already taken</li>";
+}
 
 
 if($error==0) {
