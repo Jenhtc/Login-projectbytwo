@@ -1,4 +1,4 @@
-# BECODE : PROJET PHP
+# LOGIN : projet BeCode - PHP
 ## Description du projet
 https://github.com/becodeorg/LIE-Jepsen-2.14/blob/master/02-the-hill/06-challenges-php-sql/login.adoc
 ## Participants
